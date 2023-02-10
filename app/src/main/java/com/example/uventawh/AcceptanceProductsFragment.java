@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -115,6 +116,8 @@ public class AcceptanceProductsFragment extends Fragment {
 
     private boolean shtrihCodeKeyboard = false;
 
+    private boolean generateAcceptContainer;
+
     androidx.appcompat.app.AlertDialog quantityDialog = null;
 
     @Override
@@ -138,6 +141,8 @@ public class AcceptanceProductsFragment extends Fragment {
         h = new Handler();
 
         Bundle bundle = getArguments();
+
+        generateAcceptContainer = bundle.getBoolean("generateAcceptContainer");
 
         ref = bundle.getString("ref");
         number  = bundle.getString("number");
@@ -165,7 +170,7 @@ public class AcceptanceProductsFragment extends Fragment {
                         @Override
                         public void callMethod(Bundle arguments) {
 
-                            scanShtrihCode(taskItem.shtrih_codes.get(0).toString());
+                            scanShtrihCode(taskItem.shtrih_codes.get(0).toString(), 1);
 
                         }
                     }, bundle, "Ввести вручную ?", "Ввод вручную");
@@ -184,25 +189,25 @@ public class AcceptanceProductsFragment extends Fragment {
             public void onTaskItemLongClick(AcceptanceProduct taskItem, Integer pos, View itemView) {
 
 
-//                if (taskItem.level == 2 && taskItem.status.equals("К выполнению")) {
-//
-//                    HttpClient httpClient = new HttpClient(getContext());
-//
-//                    Bundle bundle = new Bundle();
-//                    bundle.putInt("pos", pos);
-//                    httpClient.showInputQuantity(taskItem.quantity - taskItem.scanned, getActivity(), new BundleMethodInterface() {
-//                        @Override
-//                        public void callMethod(Bundle arguments) {
-//
-//                            onTaskItemFound(taskItem, pos, arguments.getInt("quantity"));
-//
-//
-//                        }
-//                    }, bundle, "Ввести вручную", "Ввод количества вручную");
-//
-//
-//                }
-//
+                if (!taskItem.isContainer) {
+
+                    HttpClient httpClient = new HttpClient(getContext());
+
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("pos", pos);
+                    httpClient.showInputQuantity(taskItem.quantity, getActivity(), new BundleMethodInterface() {
+                        @Override
+                        public void callMethod(Bundle arguments) {
+
+                            scanShtrihCode(taskItem.shtrih_codes.get(0).toString(), arguments.getInt("quantity"));
+
+
+                        }
+                    }, bundle, "Ввести вручную", "Ввод количества вручную");
+
+
+                }
+
             }
         });
 
@@ -227,7 +232,7 @@ public class AcceptanceProductsFragment extends Fragment {
 
                                                     imm.hideSoftInputFromWindow(actvShtrihCode.getWindowToken(), 0);
 
-                                                    scanShtrihCode(strCatName);
+                                                    scanShtrihCode(strCatName, 1);
 
                                                     return true;
                                                 }
@@ -518,7 +523,7 @@ public class AcceptanceProductsFragment extends Fragment {
         }
     };
 
-    private void scanShtrihCode(String strCatName) {
+    private void scanShtrihCode(String strCatName, int quantity) {
 
         Boolean foundContainer = false;
         Boolean found = false;
@@ -567,7 +572,7 @@ public class AcceptanceProductsFragment extends Fragment {
             curContainer.party_date_exist = curTask.party_date_exist;
             curContainer.party_date_expired_exist = curTask.party_date_expired_exist;
             curContainer.party_date_produced_exist = curTask.party_date_produced_exist;
-            curContainer.quantity += 1;
+            curContainer.quantity += quantity;
 
             error.setVisibility(View.GONE);
 
@@ -584,7 +589,7 @@ public class AcceptanceProductsFragment extends Fragment {
 
             } else {
 
-                doScanShtrihCode(curTask, j);
+                doScanShtrihCode(curTask, j, quantity);
 
             }
 
@@ -694,6 +699,24 @@ public class AcceptanceProductsFragment extends Fragment {
         }
     }
 
+    private void doScanShtrihCode(AcceptanceProduct curTask, int j, int number) {
+
+        curTask.quantity -= number;
+
+        if (curTask.quantity == 0){
+
+
+            acceptanceProducts.remove(j - 1);
+
+            if (acceptanceProducts.size() == 1 || curTask.quantity == 0){
+
+                askToCloseContainer(acceptanceProducts.get(0), 0);
+
+            }
+
+        }
+    }
+
     private void update() {
 
         acceptanceProducts.clear();
@@ -754,6 +777,12 @@ public class AcceptanceProductsFragment extends Fragment {
 
 
                 }
+
+                    if (generateAcceptContainer){
+
+                        scanShtrihCode(UUID.randomUUID().toString(), 1);
+
+                    }
 
 //                if (scanned > 0 && toScan == 0 && (status.equals("В отбор") || status.equals("Новый") || status.equals("В отборе"))){
 //

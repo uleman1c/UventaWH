@@ -324,6 +324,7 @@ public class AcceptanceListFragment extends Fragment {
     private void acceptanceProducts(AcceptanceItem acceptanceItem) {
 
         Bundle bundle = new Bundle();
+        bundle.putBoolean("generateAcceptContainer", tsdSettings.generateAcceptContainer);
         bundle.putString("ref", acceptanceItem.ref);
         bundle.putString("number", acceptanceItem.number);
         bundle.putString("numDocument", acceptanceItem.numDocument);
