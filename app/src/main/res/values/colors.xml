@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorOk">#8BC34A</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="gray">#444440</color>
+    <color name="list_repeat">#63FFEB3B</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="Otobran">#3CB371</color>
+    <color name="VOtbore">#98FB98</color>
+    <color name="KPlanirovaniyu">#FAFAD2</color>
+    <color name="SplanirovanChastichno">#FFDED2</color>
+    <color name="GotovKOtgruzke">#D8BFD8</color>
+</resources>

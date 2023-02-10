@@ -1,0 +1,89 @@
+<resources>
+
+    <string name="app_name">WMS</string>
+
+    <string name="settings">Настройки</string>
+    <string name="inputPinCode">Пароль</string>
+    <string name="ok">ОК</string>
+
+    <string name="version">1.39 сборка от 23 января 2022</string>
+
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="back"><![CDATA[<]]></string>
+
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_settings2">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="getContractors">getContractors</string>
+
+
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+    <string name="emptyRef">00000000-0000-0000-0000-000000000000</string>
+
+
+    <string name="server2">https://1c-sql.uventa.com</string>
+    <string name="server">https://transtechn.ru</string>
+    <string name="server3">http://10.0.2.2</string>
+    <string name="server1">http://192.168.1.101</string>
+
+
+    <string name="base_wms">knit_wms</string>
+    <string name="hs_wms">/hs/mob/</string>
+
+    <string name="base_acc">uventa</string>
+    <string name="hs_acc">/hs/mob/</string>
+
+    <string name="title_activity_main_ware_house">MainWareHouseActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Операции</string>
+    <string name="menu_truck_arrival">Прибытие транспорта</string>
+    <string name="menu_goods_receipt">Приемка / отгрузка</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_placement">Размещение</string>
+    <string name="menu_marking">Маркировка</string>
+
+</resources>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uventawh.AcceptPageOneActivity">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary_dark"
+            android:gravity="center"
+            android:padding="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:text="Приемка"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+            <TextView
+                android:id="@+id/tvTextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Автомобиль" />
+
+            <TextView
+                android:id="@+id/tvTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_border"
+                android:gravity="center"
+                android:padding="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+            <TextView
+                android:id="@+id/tvTextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Водитель" />
+
+            <TextView
+                android:id="@+id/tvDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_border"
+                android:gravity="center"
+                android:padding="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+            <TextView
+                android:id="@+id/tvNumberDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Номер накладной" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etShtrihCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:focusedByDefault="true"
+                    android:hint="Штрихкод"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textSize="16dp" />
+
+                <ImageButton
+                    android:id="@+id/ibKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:adjustViewBounds="false"
+                    android:baselineAlignBottom="false"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/ic_keyboard_black_24dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+            <TextView
+                android:id="@+id/tvTextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Контрагент" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvContractor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/group_border"
+                    android:gravity="center"
+                    android:hint="выбрать"
+                    android:padding="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                <ImageButton
+                    android:id="@+id/ibChooseContractor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:adjustViewBounds="false"
+                    android:baselineAlignBottom="false"
+                    android:clickable="false"
+                    android:cropToPadding="false"
+                    android:src="@drawable/ic_drop_down" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAddresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+                <TextView
+                    android:id="@+id/tvSender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Отправитель" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.uventawh.DelayAutoCompleteTextView
+                        android:id="@+id/actvSender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="начните ввод"
+                        android:imeOptions="flagNoExtractUi|actionSearch"
+                        android:inputType="textCapCharacters"
+                        android:paddingRight="32dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="16dp"
+                        android:visibility="gone" />
+
+
+
+                    <ImageButton
+                        android:id="@+id/ibChooseSender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:adjustViewBounds="false"
+                        android:baselineAlignBottom="false"
+                        android:clickable="false"
+                        android:cropToPadding="false"
+                        android:src="@drawable/ic_drop_down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+                <TextView
+                    android:id="@+id/tvReceiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:gravity="left"
+                    android:text="Получатель" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.uventawh.DelayAutoCompleteTextView
+                        android:id="@+id/actvReceiver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="начните ввод"
+                        android:imeOptions="flagNoExtractUi|actionSearch"
+                        android:inputType="textCapCharacters"
+                        android:paddingRight="32dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar2"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="16dp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibChooseReceiver"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:adjustViewBounds="false"
+                        android:baselineAlignBottom="false"
+                        android:clickable="false"
+                        android:cropToPadding="false"
+                        android:src="@drawable/ic_drop_down" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Наименование груза" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvCargoDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/group_border"
+                    android:gravity="center"
+                    android:hint="выбрать"
+                    android:padding="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                <ImageButton
+                    android:id="@+id/ibChooseCargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:adjustViewBounds="false"
+                    android:baselineAlignBottom="false"
+                    android:clickable="false"
+                    android:cropToPadding="false"
+                    android:src="@drawable/ic_drop_down" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Дата отгрузки"
+                android:textSize="@dimen/activity_horizontal_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSendDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/group_border"
+                    android:gravity="center"
+                    android:hint="выбрать"
+                    android:padding="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+                <ImageButton
+                    android:id="@+id/ibChooseSendDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:adjustViewBounds="false"
+                    android:baselineAlignBottom="false"
+                    android:clickable="false"
+                    android:cropToPadding="false"
+                    android:src="@drawable/ic_drop_down" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabOk"
+        android:layout_width="301dp"
+        android:layout_height="54dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/cast_ic_expanded_controller_play" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

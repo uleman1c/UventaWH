@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacementMenuFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnPlacement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@color/colorOk"
+            android:padding="32sp"
+            android:text="Разместить" />
+
+        <Button
+            android:id="@+id/btnPlacementContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@color/place_autocomplete_search_hint"
+            android:padding="32sp"
+            android:text="Разместить палет" />
+
+        <Button
+            android:id="@+id/btnWhatPlaced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@color/colorOk"
+            android:padding="32sp"
+            android:text="Что в ячейке" />
+
+        <Button
+            android:id="@+id/btnWherePlaced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@color/place_autocomplete_search_hint"
+            android:padding="32sp"
+            android:text="Где размещено" />
+
+        <Button
+            android:id="@+id/btnGetPlaced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@color/colorOk"
+            android:padding="32sp"
+            android:text="Положить на палет из ячейки" />
+    </LinearLayout>
+
+</FrameLayout>

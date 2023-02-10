@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".RecordApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ContainsActivity"></activity>
+        <activity android:name=".AcceptListActivity" />
+        <activity
+            android:name=".MainWareHouseActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_main_ware_house"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".LoginScanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SelectDeliveryOrderActivity" />
+        <activity android:name=".DeliveryOrdersActivity" />
+        <activity android:name=".DeliveryOrderTestActivity" />
+        <activity android:name=".ShipmentTestActivity" />
+        <activity
+            android:name=".AddTransportActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".TrasportListActivity" />
+        <activity android:name=".ScanDocActivity" />
+        <activity android:name=".DriversActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.driversactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FilterActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.filteractivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AcceptPageTwoActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.acceptpagetwoactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AcceptPageOneActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.acceptpageoneactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContainersListActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.containerslistactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddSkladActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.addskladactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AcceptActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.acceptactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShipmentActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.shipmentactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RepeatShtrihCodeActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.repeatshtrihcodeactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AcceptFromRouteActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.acceptfromrouteactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RoutesListActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.routesactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PincodeActivity" />
+        <activity android:name=".AddToAcceptActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.add_to_accept_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddressesListActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.addresseslistactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GroupAcceptActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.groupacceptactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContractorsListActivity">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.contractorsactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.settingsactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScanActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.scanactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InputPinCode"
+            android:label="Get data">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.pincode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StartOCRActivity"
+            android:label="Read Text">
+            <intent-filter>
+                <action android:name="com.example.uventawh.action.startocrcapture" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OcrCaptureActivity"
+            android:label="Read Text" />
+
+        <service
+            android:name=".ExchangeService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <service android:name=".RecordService" />
+    </application>
+
+</manifest>

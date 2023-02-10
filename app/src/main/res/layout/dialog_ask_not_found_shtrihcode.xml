@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/place_autocomplete_search_hint"
+        android:padding="24dp"
+        android:text="Добавить коробку"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnAddP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOk"
+        android:padding="24dp"
+        android:text="Добавить палет"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnIgnore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="24dp"
+        android:text="Пропустить"
+        android:textSize="24sp" />
+
+</LinearLayout>

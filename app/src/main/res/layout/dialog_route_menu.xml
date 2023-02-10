@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:text="Заблокировать ?"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/btnReceiptPalet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_overlay"
+        android:padding="16sp"
+        android:text="Принять по палетам"
+        android:textColor="@color/ic_icon_background"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnReceiptRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wallet_holo_blue_light"
+        android:padding="16sp"
+        android:text="Принять рейс"
+        android:textColor="@color/ic_icon_background"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnShipAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="16sp"
+        android:text="Отгрузить адрес"
+        android:textColor="@color/ic_icon_background"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOk"
+        android:padding="16sp"
+        android:text="Закрыть"
+        android:textColor="@color/ic_icon_background"
+        android:textSize="18sp" />
+
+</LinearLayout>

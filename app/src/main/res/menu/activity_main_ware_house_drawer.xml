@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_scanRouteListFragment"
+            android:icon="@drawable/scanned48"
+            android:title="Сканировать маршрутник" />
+        <item
+            android:id="@+id/nav_truck_arrival"
+            android:icon="@drawable/ic_truck"
+            android:title="@string/menu_truck_arrival" />
+        <item
+            android:id="@+id/routesListFragment"
+            android:icon="@drawable/ic_plus_box"
+            android:title="@string/menu_goods_receipt"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_placement_menu"
+            android:icon="@drawable/ic_placement"
+            android:title="@string/menu_placement"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_invent"
+            android:icon="@drawable/ic_inv"
+            android:title="Инвентаризация"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_code_exchange"
+            android:icon="@drawable/ic_marking"
+            android:title="Замена штрихкодов"
+            android:visible="true" />
+    </group>
+</menu>

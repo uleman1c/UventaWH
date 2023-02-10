@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/drawable/back.xml" value="0.328" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/drawable/ic_baseline_subdirectory_arrow_right_24.xml" value="0.262" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/acceptance_list_fragment.xml" value="0.33152173913043476" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/acceptance_product_in_container_list_item.xml" value="0.2803442028985507" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/acceptance_product_list_item.xml" value="0.2803442028985507" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/activity_group_accept.xml" value="0.27355072463768115" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/activity_login_scan.xml" value="0.31431159420289856" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/activity_main_ware_house.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/activity_settings.xml" value="0.22" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/activity_splash.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/app_bar_main_ware_house.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/back.xml" value="0.3170289855072464" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/content_main_ware_house.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/delivery_order_containers_list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/delivery_order_products_list_item.xml" value="0.3170289855072464" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/delivery_order_products_list_item_l.xml" value="0.33" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/delivery_order_tasks_list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/delivery_order_tasks_list_item_l1.xml" value="0.33" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/delivery_order_tasks_list_item_l11.xml" value="0.31476449275362317" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/delivery_order_tasks_list_item_l12.xml" value="0.3134057971014493" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/dialog_input_party.xml" value="0.27355072463768115" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/dialog_input_quantity.xml" value="0.31476449275362317" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/dialog_input_serial_number.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/dialog_pin_code.xml" value="0.31476449275362317" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_accept.xml" value="0.33152173913043476" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_acceptance_products.xml" value="0.3374094202898551" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_cell.xml" value="0.22" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_container.xml" value="0.2015625" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_contractors_list.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_delivery_list.xml" value="0.25" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_delivery_order_test.xml" value="0.22" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_edit_route.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_input_start.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_inventarization.xml" value="0.15" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_item_list.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_refill_tasks_list_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_routes_extended_list.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_scan_cell.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/fragment_scan_quantity.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/list_input_start_item.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/list_inventarization_item.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/list_shipment_item.xml" value="0.5" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/layout/new_container_fragment.xml" value="0.31431159420289856" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/KnitWH/app/src/main/res/menu/activity_main_ware_house_drawer.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Mihail/AndroidStudioProjects/UventaWH/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" location="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

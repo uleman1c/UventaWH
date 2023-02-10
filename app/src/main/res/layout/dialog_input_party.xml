@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16sp"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/llPartyNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+        android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Номер партии"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etPartyNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Номер" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPartyDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+        android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Дата партии"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPartyDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/group_border"
+                android:gravity="center"
+                android:padding="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                android:text="выбрать"
+                android:textSize="@dimen/activity_horizontal_margin" />
+
+            <ImageButton
+                android:id="@+id/ibChoosePartyDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:clickable="false"
+                android:cropToPadding="false"
+                android:src="@drawable/ic_drop_down" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPartyDateExpired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+        android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Срок годности"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPartyDateExpired"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/group_border"
+                android:gravity="center"
+                android:padding="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                android:text="выбрать"
+                android:textSize="@dimen/activity_horizontal_margin" />
+
+            <ImageButton
+                android:id="@+id/ibChoosePartyDateExpired"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:clickable="false"
+                android:cropToPadding="false"
+                android:src="@drawable/ic_drop_down" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPartyDateProduced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+        android:paddingRight="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Дата производства"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPartyDateProduced"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/group_border"
+                android:gravity="center"
+                android:padding="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                android:text="выбрать"
+                android:textSize="@dimen/activity_horizontal_margin" />
+
+            <ImageButton
+                android:id="@+id/ibChoosePartyDateProduced"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:clickable="false"
+                android:cropToPadding="false"
+                android:src="@drawable/ic_drop_down" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:background="@color/colorOk"
+            android:padding="16sp"
+            android:text="ОК"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

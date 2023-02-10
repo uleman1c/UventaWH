@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.uventawh.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_truck_arrival"
+        android:name="com.example.uventawh.TruckArrivalFragment"
+        android:label="@string/menu_truck_arrival"
+        tools:layout="@layout/fragment_truck_arrival" >
+        <action
+            android:id="@+id/action_nav_truck_arrival_to_addTruckFragment"
+            app:destination="@id/addTruckFragment"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/goodsReceiptFragment"
+        android:name="com.example.uventawh.GoodsReceiptFragment"
+        android:label="fragment_goods_receipt"
+        tools:layout="@layout/fragment_goods_receipt" />
+    <fragment
+        android:id="@+id/addTruckFragment"
+        android:name="com.example.uventawh.AddTruckFragment"
+        android:label="Добавить транспорт"
+        tools:layout="@layout/fragment_add_truck" />
+    <fragment
+        android:id="@+id/nav_cell_placement"
+        android:name="com.example.uventawh.PlacementFragment"
+        android:label="Размещение - Ячейка"
+        tools:layout="@layout/fragment_placement">
+        <action
+            android:id="@+id/action_nav_placement_to_scanGoodsFragment"
+            app:destination="@id/scanGoodsFragment"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanGoodsFragment"
+        android:name="com.example.uventawh.ScanGoodsFragment"
+        android:label="Товары"
+        tools:layout="@layout/fragment_scan_goods" />
+    <fragment
+        android:id="@+id/nav_placement"
+        android:name="com.example.uventawh.ContractorsListFragment"
+        android:label="Размещение - Контрагенты"
+        tools:layout="@layout/fragment_contractors_list">
+        <action
+            android:id="@+id/action_nav_placement_to_nav_cell_placement"
+            app:destination="@id/nav_cell_placement" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_marking"
+        android:name="com.example.uventawh.ContractorsListFragment"
+        android:label="Маркировка - Контрагенты"
+        tools:layout="@layout/fragment_contractors_list">
+        <action
+            android:id="@+id/action_nav_marking_to_createCodeFragment"
+            app:destination="@id/createCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCodeFragment"
+        android:name="com.example.uventawh.CreateCodeFragment"
+        android:label="Маркировка - Штрихкоды"
+        tools:layout="@layout/fragment_create_code" />
+    <fragment
+        android:id="@+id/routesListFragment"
+        android:name="com.example.uventawh.RoutesListFragment"
+        android:label="Рейсы"
+        tools:layout="@layout/fragment_routes_list" />
+    <fragment
+        android:id="@+id/editRouteFragment"
+        android:name="com.example.uventawh.EditRouteFragment"
+        android:label=""
+        tools:layout="@layout/fragment_edit_route" />
+    <fragment
+        android:id="@+id/acceptListFragment"
+        android:name="com.example.uventawh.AcceptListFragment"
+        android:label="Добавить приемку в рейс"
+        tools:layout="@layout/fragment_accept_list" >
+        <action
+            android:id="@+id/action_acceptListFragment_to_receiptPageOneFragment"
+            app:destination="@id/receiptPageOneFragment"
+            app:popUpTo="@id/editRouteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiptPageOneFragment"
+        android:name="com.example.uventawh.ReceiptPageOneFragment"
+        android:label="Приемка"
+        tools:layout="@layout/fragment_receipt_page_one" />
+
+    <fragment
+        android:id="@+id/contractorsListFragment"
+        android:name="com.example.uventawh.ContractorsListFragment"
+        android:label="Контрагенты"
+        tools:layout="@layout/fragment_contractors_list"/>
+    <fragment
+        android:id="@+id/docNumberFragment"
+        android:name="com.example.uventawh.DocNumberFragment"
+        android:label="Номер документа"
+        tools:layout="@layout/fragment_doc_number" />
+    <fragment
+        android:id="@+id/addressesFragment"
+        android:name="com.example.uventawh.AddressesFragment"
+        android:label="Адреса"
+        tools:layout="@layout/fragment_addresses" />
+    <fragment
+        android:id="@+id/transportListFragment"
+        android:name="com.example.uventawh.TransportListFragment"
+        android:label="Транспорт"
+        tools:layout="@layout/fragment_transport_list" />
+    <fragment
+        android:id="@+id/receiptsListFragment"
+        android:name="com.example.uventawh.ReceiptsListFragment"
+        android:label="fragment_receipts_list"
+        tools:layout="@layout/fragment_receipts_list" />
+    <fragment
+        android:id="@+id/nav_placement_menu"
+        android:name="com.example.uventawh.PlacementMenuFragment"
+        android:label="Размещение"
+        tools:layout="@layout/fragment_placement_menu" />
+    <fragment
+        android:id="@+id/whatPlacedFragment"
+        android:name="com.example.uventawh.WhatPlacedFragment"
+        android:label="Что размещено в ячейке"
+        tools:layout="@layout/fragment_what_placed" />
+    <fragment
+        android:id="@+id/wherePlacedFragment"
+        android:name="com.example.uventawh.WherePlacedFragment"
+        android:label="Где размещена номенклатура"
+        tools:layout="@layout/fragment_where_placed" />
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.example.uventawh.ScanFragment"
+        android:label="Сканирование"
+        tools:layout="@layout/fragment_scan" />
+    <fragment
+        android:id="@+id/containsFragment"
+        android:name="com.example.uventawh.ContainsFragment"
+        android:label="Состав"
+        tools:layout="@layout/fragment_contains" />
+    <fragment
+        android:id="@+id/deliveryOrderTestFragment"
+        android:name="com.example.uventawh.DeliveryOrderTestFragment"
+        android:label="Сканирование"
+        tools:layout="@layout/fragment_delivery_order_test" />
+    <fragment
+        android:id="@+id/nav_code_exchange"
+        android:name="com.example.uventawh.CodeExchangeFragment"
+        android:label="Замена штрихкодов"
+        tools:layout="@layout/fragment_code_exchange" />
+    <fragment
+        android:id="@+id/nav_invent"
+        android:name="com.example.uventawh.InventFragment"
+        android:label="Инвентаризация"
+        tools:layout="@layout/fragment_invent" />
+    <fragment
+        android:id="@+id/acceptPageTwoFragment"
+        android:name="com.example.uventawh.AcceptPageTwoFragment"
+        android:label="Сканирование"
+        tools:layout="@layout/fragment_accept_page_two" />
+    <fragment
+        android:id="@+id/codeExchangePageTwoFragment"
+        android:name="com.example.uventawh.CodeExchangePageTwoFragment"
+        android:label="Замена штрихкода"
+        tools:layout="@layout/fragment_code_exchange_page_two" />
+    <fragment
+        android:id="@+id/nav_scanRouteListFragment"
+        android:name="com.example.uventawh.ScanRouteListFragment"
+        android:label="Сканировать маршрутник"
+        tools:layout="@layout/fragment_scan_route_list" />
+    <fragment
+        android:id="@+id/receiptPaletFragment"
+        android:name="com.example.uventawh.ReceiptPaletFragment"
+        android:label="Принять по палетам"
+        tools:layout="@layout/fragment_receipt_palet" />
+    <fragment
+        android:id="@+id/receiptPaletGoodsFragment"
+        android:name="com.example.uventawh.ReceiptPaletGoodsFragment"
+        android:label="Палет"
+        tools:layout="@layout/fragment_receipt_palet_goods" />
+    <fragment
+        android:id="@+id/placeToCellFragment"
+        android:name="com.example.uventawh.PlaceToCellFragment"
+        android:label="Поместить в ячейку"
+        tools:layout="@layout/fragment_place_to_cell" />
+    <fragment
+        android:id="@+id/getPlacedFragment"
+        android:name="com.example.uventawh.GetPlacedFragment"
+        android:label="Вынуть из ячейки"
+        tools:layout="@layout/fragment_get_placed" />
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.example.uventawh.AddressFragment"
+        android:label="Адрес"
+        tools:layout="@layout/fragment_address" />
+    <fragment
+        android:id="@+id/deliveryListFragment"
+        android:name="com.example.uventawh.DeliveryListFragment"
+        android:label="Заказы на отгрузку"
+        tools:layout="@layout/fragment_delivery_list" />
+    <fragment
+        android:id="@+id/routesExtendedListFragment"
+        android:name="com.example.uventawh.RoutesExtendedListFragment"
+        android:label="Рейсы"
+        tools:layout="@layout/fragment_routes_extended_list" />
+    <fragment
+        android:id="@+id/docInputFragment"
+        android:name="com.example.uventawh.DocInputFragment"
+        android:label="Номер документа"
+        tools:layout="@layout/fragment_doc_input" />
+    <fragment
+        android:id="@+id/setNameFragment"
+        android:name="com.example.uventawh.SetNameFragment"
+        android:label="Наименование"
+        tools:layout="@layout/fragment_set_name" />
+    <fragment
+        android:id="@+id/scanInventFragment"
+        android:name="com.example.uventawh.ScanInventFragment"
+        android:label="Сканирование инвентаризации"
+        tools:layout="@layout/fragment_scan_invent" />
+    <fragment
+        android:id="@+id/cellFragment"
+        android:name="com.example.uventawh.CellFragment"
+        android:label="Ячейка"
+        tools:layout="@layout/fragment_cell" />
+    <fragment
+        android:id="@+id/containerFragment"
+        android:name="com.example.uventawh.ContainerFragment"
+        android:label="fragment_container"
+        tools:layout="@layout/fragment_container" />
+    <fragment
+        android:id="@+id/newContainerFragment"
+        android:name="com.example.uventawh.NewContainerFragment"
+        android:label="Контейнер"
+        tools:layout="@layout/new_container_fragment" />
+    <fragment
+        android:id="@+id/refillTasksListFragment"
+        android:name="com.example.uventawh.RefillTasksListFragment"
+        android:label="Пополнение"
+        tools:layout="@layout/fragment_refill_tasks_list_list" />
+    <fragment
+        android:id="@+id/acceptFragment"
+        android:name="com.example.uventawh.AcceptFragment"
+        android:label="Приемки"
+        tools:layout="@layout/fragment_accept" />
+    <fragment
+        android:id="@+id/acceptanceListFragment"
+        android:name="com.example.uventawh.AcceptanceListFragment"
+        android:label="Приемки"
+        tools:layout="@layout/acceptance_list_fragment" />
+    <fragment
+        android:id="@+id/acceptanceProductsFragment"
+        android:name="com.example.uventawh.AcceptanceProductsFragment"
+        android:label="Товары"
+        tools:layout="@layout/fragment_acceptance_products" />
+    <fragment
+        android:id="@+id/inputStartFragment"
+        android:name="com.example.uventawh.InputStartFragment"
+        android:label="Ввод начальных остатков"
+        tools:layout="@layout/fragment_input_start" />
+    <fragment
+        android:id="@+id/inventarizationFragment"
+        android:name="com.example.uventawh.InventarizationFragment"
+        android:label="Инвентаризация"
+        tools:layout="@layout/fragment_inventarization" />
+    <fragment
+        android:id="@+id/scanQuantityFragment"
+        android:name="com.example.uventawh.ScanQuantityFragment"
+        android:label="Сканирование"
+        tools:layout="@layout/fragment_scan_quantity" />
+    <fragment
+        android:id="@+id/scanCellFragment"
+        android:name="com.example.uventawh.ScanCellFragment"
+        android:label="Ячейка"
+        tools:layout="@layout/fragment_scan_cell" />
+
+
+</navigation>
