@@ -776,14 +776,14 @@ public class AcceptanceProductsFragment extends Fragment {
                     }, bundle, "Завершить приемку ?", "Завершение");
 
 
-                }
+                } else {
 
-                    if (generateAcceptContainer){
+                    if (generateAcceptContainer) {
 
                         scanShtrihCode(UUID.randomUUID().toString(), 1);
 
                     }
-
+                }
 //                if (scanned > 0 && toScan == 0 && (status.equals("В отбор") || status.equals("Новый") || status.equals("В отборе"))){
 //
 //                    inputQuantitySetOrderScanned(shipmentOrder, httpClient);
