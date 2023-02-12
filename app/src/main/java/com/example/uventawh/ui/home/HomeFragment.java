@@ -155,6 +155,16 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        root.findViewById(R.id.btnLeftovers).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                TakeScreenShot.Do(getContext(), root, v);
+
+                Navigation.findNavController(getActivity(), R.id.nav_host_fragment).navigate(R.id.leftoversFragment);
+            }
+        });
+
         root.findViewById(R.id.ibScanRouteList).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

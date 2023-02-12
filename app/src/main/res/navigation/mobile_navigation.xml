@@ -280,6 +280,11 @@
         android:name="com.example.uventawh.ScanCellFragment"
         android:label="Ячейка"
         tools:layout="@layout/fragment_scan_cell" />
+    <fragment
+        android:id="@+id/leftoversFragment"
+        android:name="com.example.uventawh.LeftoversFragment"
+        android:label="Остатки"
+        tools:layout="@layout/fragment_leftovers" />
 
 
 </navigation>
